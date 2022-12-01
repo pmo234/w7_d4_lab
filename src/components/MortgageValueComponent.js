@@ -1,9 +1,21 @@
-const MortgageValueComponent = ()=>{
+
+import { useEffect, useState } from "react"
+const MortgageValueComponent = ({yourSalary})=>{
+
+    const [maxMortgage, setMaxMortgage] = useState("")
+
+    useEffect(() =>{
+        setMaxMortgage(yourSalary*3)
+    })
+    
+
+    
 
     return(
-        <h2>
-            This is the Mortgage Value Component
-        </h2>
+        <div>
+            <p>Your salary is ${yourSalary}</p>
+            <p>Your max mortgage is ${maxMortgage}</p>
+        </div>
 
     )
 

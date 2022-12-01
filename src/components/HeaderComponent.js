@@ -1,9 +1,9 @@
 const HeaderComponent = ()=>{
 
     return(
-        <h2>
-            This is the The Header Component!
-        </h2>
+        <h1>
+            Max Mortgage Calculator
+        </h1>
 
     )
 
