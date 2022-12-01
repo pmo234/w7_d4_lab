@@ -1,11 +1,15 @@
 
 import { useEffect, useState } from "react"
-const MortgageValueComponent = ({yourSalary})=>{
+
+
+const MortgageValueComponent = ({yourSalary, yourDeposit})=>{
 
     const [maxMortgage, setMaxMortgage] = useState("")
 
     useEffect(() =>{
-        setMaxMortgage(yourSalary*3)
+        if (maxMortgage !== "") {
+            setMaxMortgage(yourSalary*3)
+        }
     })
     
 
@@ -14,7 +18,7 @@ const MortgageValueComponent = ({yourSalary})=>{
     return(
         <div>
             <p>Your salary is ${yourSalary}</p>
-            <p>Your max mortgage is ${maxMortgage}</p>
+            <p >Your max mortgage is ${maxMortgage}</p>
         </div>
 
     )

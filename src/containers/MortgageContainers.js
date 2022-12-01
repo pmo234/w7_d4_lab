@@ -1,5 +1,6 @@
 import HeaderComponent from "../components/HeaderComponent"
 import SalaryComponent from "../components/SalaryComponent"
+import DespositComponent from "../components/DepositComponent"
 import { useState } from "react"
 
 const MortgageContainers = ()=>{
@@ -27,6 +28,7 @@ const MortgageContainers = ()=>{
             
             <HeaderComponent/>
             <SalaryComponent/>
+            <DespositComponent />
             
         </section>
     )
